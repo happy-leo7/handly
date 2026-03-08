@@ -6,6 +6,7 @@
     "build:shared": "pnpm --filter @handly/shared build",
     "dev:shared": "pnpm --filter @handly/shared dev",
     "dev:server": "pnpm --filter @handly/server start:dev",
+    "dev:client": "pnpm --filter @handly/client dev",
     "docker:up": "docker compose up --build -d",
     "docker:down": "docker compose down",
     "docker:logs": "docker compose logs -f",
