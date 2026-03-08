@@ -1,0 +1,7 @@
+include:
+  - path: services/redis.yaml
+    project_directory: .
+  - path: services/server.yaml
+    project_directory: .
+  - path: services/client.yaml
+    project_directory: .
