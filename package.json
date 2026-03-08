@@ -1,13 +1,16 @@
 {
   "name": "handly",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:shared": "pnpm --filter @handly/shared build",
+    "dev:shared": "pnpm --filter @handly/shared dev",
+    "dev:server": "pnpm --filter @handly/server start:dev",
+    "docker:up": "docker compose up --build -d",
+    "docker:down": "docker compose down",
+    "docker:logs": "docker compose logs -f",
+    "docker:clean": "docker compose down -v",
+    "format": "prettier --write \"**/*.{ts,tsx,json,yaml,yml}\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "packageManager": "pnpm@10.29.2"
 }
